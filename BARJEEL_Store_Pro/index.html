@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
+<meta name="description" content="BARJEEL — Premium bicycle covers engineered for high-end road and carbon bikes.">
+<title>BARJEEL — Premium Bicycle Covers</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="announcement" class="announcement">UAE DELIVERY • PREMIUM BICYCLE PROTECTION</div>
+
+<header class="header">
+  <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  <a class="brand" href="#home" aria-label="BARJEEL home">
+    <span class="brand-mark">B</span><span>BARJEEL</span>
+  </a>
+  <nav id="nav">
+    <a href="#shop" data-i18n="nav_shop">Shop</a>
+    <a href="#engineering" data-i18n="nav_engineering">Engineering</a>
+    <a href="#story" data-i18n="nav_story">Our Story</a>
+    <a href="#contact" data-i18n="nav_contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button class="lang" id="langBtn">AR</button>
+    <button class="icon-btn" id="cartBtn">Bag <span id="cartCount">0</span></button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">HERITAGE ENGINEERED · U.A.E.</p>
+    <h1 data-i18n="hero_title">Protection,<br><em>elevated.</em></h1>
+    <p class="lead" data-i18n="hero_sub">Premium protection for exceptional road and carbon bicycles, designed with the restraint of a luxury object and the purpose of technical equipment.</p>
+    <div class="actions">
+      <a class="btn primary" href="#shop" data-i18n="shop_collection">Shop Collection</a>
+      <a class="btn secondary" href="#engineering" data-i18n="discover_engineering">Discover Engineering</a>
+    </div>
+    <div class="micro-stats">
+      <div><strong>600D–900D</strong><span>Oxford options</span></div>
+      <div><strong>3000mm+</strong><span>Target water resistance</span></div>
+      <div><strong>UAE</strong><span>Designed for local conditions</span></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <img src="assets/barjeel-logo.png" alt="BARJEEL logo">
+  </div>
+</section>
+
+<section class="ticker">
+  <span>PREMIUM MATERIALS</span><b>·</b><span>UV & DUST PROTECTION</span><b>·</b><span>SOFT INNER LINING</span><b>·</b><span>LIMITED EDITIONS</span>
+</section>
+
+<section id="shop" class="section">
+  <div class="section-head">
+    <div>
+      <p class="eyebrow" data-i18n="collection">THE COLLECTION</p>
+      <h2 data-i18n="built_for">Built for the <em>priceless.</em></h2>
+    </div>
+    <p data-i18n="collection_desc">Start with one precise object: a better cover for a better bicycle.</p>
+  </div>
+  <div class="filters" id="filters"></div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<section id="engineering" class="section dark">
+  <div class="section-head">
+    <div><p class="eyebrow">ENGINEERED PROTECTION</p><h2>Details that <em>matter.</em></h2></div>
+  </div>
+  <div class="feature-grid">
+    <article><span>01</span><h3>Technical Outer Shell</h3><p>Configurable 600D–900D Oxford fabric options with water- and UV-resistant treatments.</p></article>
+    <article><span>02</span><h3>Carbon-Safe Interior</h3><p>Soft inner-contact zones designed to reduce abrasion against premium paint and carbon surfaces.</p></article>
+    <article><span>03</span><h3>Reinforced Construction</h3><p>Double stitching, stress-point reinforcement, carry handle and secure adjustable closure.</p></article>
+    <article><span>04</span><h3>Built for the Gulf</h3><p>Designed around dust, heat, sunlight and everyday storage conditions common in the UAE.</p></article>
+  </div>
+</section>
+
+<section id="story" class="section story">
+  <div class="story-art">
+    <div class="tower-lines"><i></i><i></i><i></i><i></i></div>
+    <span>BARJEEL</span>
+  </div>
+  <div class="story-copy">
+    <p class="eyebrow">THE BARJEEL PHILOSOPHY</p>
+    <h2>Ancient intelligence.<br><em>Modern protection.</em></h2>
+    <p>The barjeel is a traditional Gulf wind tower engineered to guide airflow through architecture. BARJEEL takes the same principle—purposeful design—and applies it to premium cycling protection.</p>
+    <p>The result is a brand built around restraint, material quality, precise function and objects worth keeping.</p>
+  </div>
+</section>
+
+<section class="section editorial">
+  <div><p class="eyebrow">LIMITED SERIES</p><h2>Numbered.<br><em>Not mass-made.</em></h2></div>
+  <p>Future BARJEEL releases can be produced as limited runs for cycling clubs, teams, corporate gifts and collectors.</p>
+</section>
+
+<section id="contact" class="section contact dark">
+  <p class="eyebrow">PRIVATE ENQUIRIES</p>
+  <h2>Own the ride.<br><em>Protect it properly.</em></h2>
+  <p>For samples, custom team orders, wholesale and UAE delivery enquiries.</p>
+  <div class="actions center">
+    <a class="btn primary" id="waLink" target="_blank">WhatsApp</a>
+    <a class="btn secondary" id="emailLink">Email</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-brand">BARJEEL <small>PREMIUM BICYCLE COVERS</small></div>
+  <div>© <span id="year"></span> BARJEEL</div>
+  <button id="adminOpen" class="admin-link">Admin</button>
+</footer>
+
+<!-- CART -->
+<aside class="drawer" id="cartDrawer">
+  <div class="drawer-head"><h3>Your Bag</h3><button data-close="cartDrawer">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-summary">
+    <div><span>Subtotal</span><strong id="cartSubtotal">AED 0</strong></div>
+    <div><span>Shipping</span><span id="shippingPreview">Calculated at checkout</span></div>
+    <button class="btn primary full" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+<div class="backdrop" id="backdrop"></div>
+
+<!-- PRODUCT MODAL -->
+<div class="modal" id="productModal">
+  <div class="modal-card product-modal-card">
+    <button class="modal-x" data-close="productModal">×</button>
+    <div class="product-modal-media" id="pmMedia">BARJEEL</div>
+    <div class="product-modal-info">
+      <p class="eyebrow">BARJEEL COLLECTION</p>
+      <h2 id="pmName"></h2>
+      <div class="modal-price" id="pmPrice"></div>
+      <p id="pmDescription"></p>
+      <label>Variant<select id="pmVariant"></select></label>
+      <label>Quantity<input id="pmQty" type="number" min="1" value="1"></label>
+      <button class="btn primary full" id="pmAdd">Add to Bag</button>
+      <div class="specs" id="pmSpecs"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CHECKOUT -->
+<div class="modal" id="checkoutModal">
+  <div class="modal-card checkout-card">
+    <button class="modal-x" data-close="checkoutModal">×</button>
+    <div>
+      <p class="eyebrow">SECURE CHECKOUT DEMO</p>
+      <h2>Delivery details</h2>
+      <form id="checkoutForm">
+        <div class="form-grid">
+          <label>Full name<input name="name" required></label>
+          <label>Phone<input name="phone" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Emirate<select name="emirate" required><option>Dubai</option><option>Abu Dhabi</option><option>Sharjah</option><option>Ajman</option><option>Umm Al Quwain</option><option>Ras Al Khaimah</option><option>Fujairah</option></select></label>
+          <label class="wide">Address<input name="address" required></label>
+          <label>Discount code<input id="discountInput" name="discount"></label>
+          <label>Payment<select name="payment"><option>Cash on Delivery</option><option disabled>Online Payment (connect gateway)</option></select></label>
+        </div>
+        <div class="order-total" id="checkoutTotals"></div>
+        <button class="btn primary full" type="submit">Place Order</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- ORDER SUCCESS -->
+<div class="modal" id="successModal">
+  <div class="modal-card success-card">
+    <p class="eyebrow">ORDER RECEIVED</p>
+    <h2>Thank you.</h2>
+    <p id="successText"></p>
+    <button class="btn primary" data-close="successModal">Continue</button>
+  </div>
+</div>
+
+<!-- ADMIN -->
+<div class="modal admin-modal" id="adminModal">
+  <div class="modal-card admin-card">
+    <button class="modal-x" data-close="adminModal">×</button>
+    <div id="adminLogin">
+      <p class="eyebrow">BARJEEL ADMIN</p>
+      <h2>Store control</h2>
+      <p class="muted">Demo dashboard stored in this browser. Change the demo password inside script.js before use.</p>
+      <label>Password<input type="password" id="adminPassword"></label>
+      <button class="btn primary" id="adminLoginBtn">Enter</button>
+      <p class="error" id="adminError"></p>
+    </div>
+    <div id="adminPanel" class="hidden">
+      <div class="admin-top">
+        <div><p class="eyebrow">BARJEEL ADMIN</p><h2>Dashboard</h2></div>
+        <button class="btn secondary" id="adminLogout">Logout</button>
+      </div>
+      <div class="admin-kpis" id="adminKpis"></div>
+      <div class="admin-tabs">
+        <button class="active" data-tab="productsTab">Products</button>
+        <button data-tab="ordersTab">Orders</button>
+        <button data-tab="settingsTab">Settings</button>
+      </div>
+      <section id="productsTab" class="admin-tab active">
+        <div id="adminProducts"></div>
+        <button class="btn secondary" id="addProductBtn">+ Add Product</button>
+      </section>
+      <section id="ordersTab" class="admin-tab"><div id="adminOrders"></div></section>
+      <section id="settingsTab" class="admin-tab">
+        <div class="form-grid">
+          <label>Announcement<input id="setAnnouncement"></label>
+          <label>Shipping fee AED<input id="setShipping" type="number"></label>
+          <label>Free shipping threshold AED<input id="setFreeShipping" type="number"></label>
+          <label>WhatsApp<input id="setWhatsapp"></label>
+          <label>Email<input id="setEmail"></label>
+          <label>Currency<input id="setCurrency"></label>
+        </div>
+        <button class="btn primary" id="saveSettings">Save Settings</button>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
